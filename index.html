@@ -1,69 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavya Gorani | Aspiring Data Scientist</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kavya Gorani — Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Kavya Gorani — BSc.IT student. Data Analyst Portfolio showcasing Excel dashboards and data projects." />
 </head>
 <body>
-
-<header>
-    <h1>Kavya Gorani</h1>
-    <p>Aspiring Data Scientist</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <h1 class="name">Kavya Pravin Gorani</h1>
+        <p class="subtitle">Aspiring Data Analyst • BSc.IT • Thakur College of Science & Commerce</p>
+      </div>
+      <nav class="top-nav">
         <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am an aspiring Data Scientist currently building my skills in Python, Data Analysis, and Machine Learning.
-        I enjoy exploring data, finding patterns, and turning insights into actionable decisions.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>Pandas & NumPy</li>
-        <li>Data Visualization (Matplotlib, Seaborn)</li>
-        <li>SQL Basics</li>
-        <li>Machine Learning (Beginner)</li>
-    </ul>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Netflix Data Analysis</h3>
-        <p>Cleaned and visualized sales data to find top-performing products and seasonal trends.</p>
+      </nav>
     </div>
-    <div class="project">
-        <h3>Movie Recommendation System</h3>
-        <p>Built a simple recommendation model using Python and Pandas to suggest movies based on user preferences.</p>
-    </div>
-    <div class="project">
-        <h3>COVID-19 Data Dashboard</h3>
-        <p>Created an interactive dashboard showing COVID-19 trends using Python and Plotly.</p>
-    </div>
-</section>
+  </header>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="#">github.com/yourusername</a></p>
-</section>
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>Hello — I’m <strong>Kavya</strong>, a first-year BSc.IT student passionate about turning data into insights. I use Excel, PivotTables and dashboards to analyze business data. I am learning SQL, Python and Power BI to expand my toolkit.</p>
+      <p><strong>Primary tools:</strong> Excel (PivotTables, charts), Power BI (basic), Python (Pandas - learning), SQL (learning)</p>
+    </section>
 
-<footer>
-    <p>© 2025 Kavya Gorani</p>
-</footer>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
 
+      <article class="project">
+        <h3>Superstore Sales Dashboard (Excel)</h3>
+        <p><strong>Tools:</strong> Excel (PivotTables, Charts, Slicers)</p>
+        <p><strong>Overview:</strong> Cleaned and analyzed ~9,000 retail transactions from the Kaggle Superstore dataset. Built an interactive Excel dashboard to visualize Sales, Profit, Region performance and monthly trends.</p>
+
+        <ul class="project-points">
+          <li>Cleaned & standardized data for consistency</li>
+          <li>Built PivotTables and PivotCharts for region/category/month analysis</li>
+          <li>Created KPI cards: Total Sales, Total Profit, Total Quantity</li>
+          <li>Key insights: Top performing region, highest-profit categories, low-margin products</li>
+        </ul>
+
+        <div class="project-links">
+          <!-- Replace these links with actual file locations after uploading files to your repo -->
+          <a class="btn" href="files/Superstore_Sales_Dashboard.xlsx" target="_blank" rel="noopener">Download Dashboard (.xlsx)</a>
+          <a class="btn ghost" href="https://github.com/kavyagorani/Superstore-Project" target="_blank" rel="noopener">View GitHub Repo</a>
+        </div>
+
+        <p class="small">Tip: Add a screenshot named <code>superstore_screenshot.png</code> into the repo and reference it if you want a visual preview here.</p>
+      </article>
+
+      <!-- add more project cards here later -->
+    </section>
+
+    <section id="resume" class="card">
+      <h2>Resume</h2>
+      <p>Download my ATS-friendly resume (PDF) or view online:</p>
+      <div class="project-links">
+        <a class="btn" href="files/Kavya_Pravin_Gorani_Data_Analyst_Intern_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+        <a class="btn ghost" href="files/Kavya_Pravin_Gorani_Data_Analyst_Intern_Resume.docx" target="_blank" rel="noopener">Download Resume (Word)</a>
+      </div>
+      <p class="small">(Add your resume files into the <code>files/</code> folder in the repo.)</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kavya-gorani-3b3838367" target="_blank" rel="noopener">linkedin.com/in/kavya-gorani-3b3838367</a></p>
+      <p><strong>Email:</strong> [Add your email here]</p>
+      <p class="small">You can also add a link to your GitHub profile or a contact form here.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Kavya Pravin Gorani — Data Analyst Portfolio</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // set year
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
